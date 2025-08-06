@@ -16,7 +16,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-gray-400">
-              PakTürk Maarif International Schools Model United Nations
+              Pak-Turk Maarif International Schools Model United Nations
             </p>
           </div>
 
@@ -41,9 +41,9 @@ export const Footer = () => {
                 <Mail className="w-4 h-4 mr-2" />
                 ptmun@maarif.edu.pk
               </li>
-              <li className="flex items-center">
-                <MapPin className="w-4 h-4 mr-2" />
-                Lahore Campus
+              <li className="flex items-start">
+                <MapPin className="w-4 h-4 mr-2 mt-0.5 flex-shrink-0" />
+                <span>Raiwind Rd, Block D OPF Housing Scheme, Lahore</span>
               </li>
             </ul>
           </div>
@@ -59,7 +59,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-400">
-          <p>&copy; 2025 PakTürk Maarif International Schools. All rights reserved.</p>
+          <p>&copy; 2025 Pak-Turk Maarif International Schools. All rights reserved.</p>
         </div>
       </div>
     </footer>

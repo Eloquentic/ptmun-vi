@@ -52,9 +52,9 @@ export const ContactSection = () => {
       icon: <MapPin className="w-6 h-6 text-blue-600" />,
       title: "Campus Location",
       details: [
-        "PakTürk Maarif International Schools",
-        "Lahore Campus",
-        "Lahore, Pakistan"
+        "Pak-Turk Maarif International Schools",
+        "Raiwind Rd, Block D OPF Housing Scheme",
+        "Lahore, 54000, Pakistan"
       ]
     },
     {
@@ -234,14 +234,15 @@ export const ContactSection = () => {
         <Card>
           <CardHeader>
             <CardTitle>Find Us</CardTitle>
-            <p className="text-gray-600">PakTürk Maarif International Schools, Lahore Campus</p>
+            <p className="text-gray-600">Pak-Turk Maarif International Schools, Raiwind Rd, Block D OPF Housing Scheme, Lahore, 54000</p>
           </CardHeader>
           <CardContent>
             <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
               <div className="text-center text-gray-500">
                 <MapPin className="w-12 h-12 mx-auto mb-2" />
                 <p className="text-sm">Interactive map would be embedded here</p>
-                <p className="text-xs">Lahore, Pakistan</p>
+                <p className="text-xs">Raiwind Rd, Block D OPF Housing Scheme</p>
+                <p className="text-xs">Lahore, 54000, Pakistan</p>
               </div>
             </div>
           </CardContent>

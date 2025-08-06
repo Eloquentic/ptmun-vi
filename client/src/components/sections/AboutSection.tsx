@@ -27,7 +27,7 @@ export const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">About PTMUN</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            PakTürk Maarif International Schools Model United Nations has been a beacon of 
+            Pak-Turk Maarif International Schools Model United Nations has been a beacon of 
             diplomatic education since its inception, fostering international understanding 
             and developing future global leaders in Lahore, Pakistan.
           </p>
