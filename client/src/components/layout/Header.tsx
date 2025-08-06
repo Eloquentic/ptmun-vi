@@ -27,35 +27,35 @@ export const Header = () => {
     <header className="bg-white/95 backdrop-blur-sm border-b sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3 flex-shrink-0">
             <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">PT</span>
             </div>
-            <div>
-              <h1 className="font-bold text-lg">PTMUN VI</h1>
+            <div className="whitespace-nowrap">
+              <h1 className="font-bold text-lg leading-tight">PTMUN VI</h1>
               <p className="text-xs text-muted-foreground">2025</p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-4">
+          <nav className="hidden lg:flex items-center space-x-3 xl:space-x-4">
             {menuItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium hover:text-blue-600 transition-colors"
+                className="text-sm font-medium hover:text-blue-600 transition-colors px-2 py-1 rounded"
               >
                 {item.label}
               </button>
             ))}
-            <Button onClick={() => scrollToSection('registration')}>
+            <Button onClick={() => scrollToSection('registration')} className="ml-2">
               Register Now
             </Button>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="lg:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -64,7 +64,7 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t">
+          <nav className="lg:hidden py-4 border-t">
             <div className="flex flex-col space-y-3">
               {menuItems.map((item) => (
                 <button

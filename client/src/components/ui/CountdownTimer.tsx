@@ -34,12 +34,12 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) =>
   }, [targetDate]);
 
   return (
-    <div className="flex justify-center gap-4">
+    <div className="flex justify-center gap-2 sm:gap-4 min-w-0">
       {Object.entries(timeLeft).map(([unit, value]) => (
-        <Card key={unit} className="bg-white/10 backdrop-blur-sm border-white/20 p-4 min-w-[80px]">
+        <Card key={unit} className="bg-white/10 backdrop-blur-sm border-white/20 p-3 sm:p-4 min-w-[70px] sm:min-w-[80px] flex-shrink-0">
           <div className="text-center">
-            <div className="text-2xl font-bold text-white">{value}</div>
-            <div className="text-sm text-white/80 capitalize">{unit}</div>
+            <div className="text-xl sm:text-2xl font-bold text-white">{value}</div>
+            <div className="text-xs sm:text-sm text-white/80 capitalize">{unit}</div>
           </div>
         </Card>
       ))}
