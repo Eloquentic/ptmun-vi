@@ -8,7 +8,7 @@ export const FeeStructureSection = () => {
     {
       type: "Early Bird",
       price: "PKR 3,500",
-      deadline: "February 15, 2025",
+      deadline: "October 15, 2025",
       icon: <Clock className="w-6 h-6 text-green-600" />,
       savings: "Save PKR 1,000",
       popular: true
@@ -16,7 +16,7 @@ export const FeeStructureSection = () => {
     {
       type: "Regular",
       price: "PKR 4,500",
-      deadline: "March 1, 2025",
+      deadline: "November 15, 2025",
       icon: <User className="w-6 h-6 text-blue-600" />,
       savings: null,
       popular: false
@@ -149,7 +149,7 @@ export const FeeStructureSection = () => {
               <p className="text-sm text-yellow-700">
                 • Full payment required to confirm registration<br/>
                 • Bank transfer and online payment options available<br/>
-                • No refunds after March 1, 2025<br/>
+                • No refunds after November 15, 2025<br/>
                 • School purchase orders accepted for delegations
               </p>
             </CardContent>

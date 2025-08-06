@@ -29,7 +29,7 @@ export const AboutSection = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             PakTürk Maarif International Schools Model United Nations has been a beacon of 
             diplomatic education since its inception, fostering international understanding 
-            and developing future global leaders.
+            and developing future global leaders in Lahore, Pakistan.
           </p>
         </div>
 
@@ -39,8 +39,8 @@ export const AboutSection = () => {
             <p className="text-lg text-gray-600 mb-6">
               For five consecutive years, PTMUN has provided students with an immersive 
               experience in international relations, diplomacy, and global governance. 
-              Our conferences have welcomed delegates from across Pakistan and beyond, 
-              creating a platform for meaningful dialogue and cultural exchange.
+              Our conferences have welcomed delegates from across Lahore and the broader 
+              region, creating a platform for meaningful dialogue and cultural exchange.
             </p>
             <p className="text-lg text-gray-600">
               Building on our rich tradition, PTMUN VI 2025 promises to be our most 
@@ -64,7 +64,7 @@ export const AboutSection = () => {
                 <div className="text-sm text-gray-600">Committees</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">30+</div>
                 <div className="text-sm text-gray-600">Schools Participated</div>
               </div>
             </div>

@@ -34,7 +34,7 @@ export const FAQSection = () => {
     {
       category: "Sessions",
       question: "How long are the committee sessions?",
-      answer: "Committee sessions typically run for 2.5-3 hours each, with breaks. The full conference spans two days with multiple sessions, opening and closing ceremonies, plus social events."
+      answer: "Committee sessions typically run for 2.5-3 hours each, with breaks. The full conference spans three days with multiple sessions, opening and closing ceremonies, plus social events."
     },
     {
       category: "Preparation",
@@ -49,12 +49,12 @@ export const FAQSection = () => {
     {
       category: "Logistics",
       question: "Is accommodation provided?",
-      answer: "Accommodation is not included in the registration fee, but we can provide a list of recommended hotels near the venue with special rates for PTMUN participants."
+      answer: "Accommodation is not included in the registration fee, but we can provide a list of recommended hotels near the venue in Lahore with special rates for PTMUN participants."
     },
     {
       category: "Food",
       question: "Are meals included in the registration?",
-      answer: "Yes, registration includes lunch and refreshments during both conference days, plus snacks during break periods. Special dietary requirements can be accommodated with advance notice."
+      answer: "Yes, registration includes lunch and refreshments during all three conference days, plus snacks during break periods. Special dietary requirements can be accommodated with advance notice."
     },
     {
       category: "Technology",

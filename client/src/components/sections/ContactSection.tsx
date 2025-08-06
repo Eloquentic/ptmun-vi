@@ -34,7 +34,7 @@ export const ContactSection = () => {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: "Phone Numbers",
       details: [
-        "Main Office: +92 51 XXX XXXX",
+        "Main Office: +92 42 XXX XXXX",
         "WhatsApp: +92 300 XXXXXXX",
         "Emergency: +92 301 XXXXXXX"
       ]
@@ -53,8 +53,8 @@ export const ContactSection = () => {
       title: "Campus Location",
       details: [
         "PakTürk Maarif International Schools",
-        "Islamabad Campus",
-        "G-10/4, Islamabad, Pakistan"
+        "Lahore Campus",
+        "Lahore, Pakistan"
       ]
     },
     {
@@ -234,14 +234,14 @@ export const ContactSection = () => {
         <Card>
           <CardHeader>
             <CardTitle>Find Us</CardTitle>
-            <p className="text-gray-600">PakTürk Maarif International Schools, Islamabad Campus</p>
+            <p className="text-gray-600">PakTürk Maarif International Schools, Lahore Campus</p>
           </CardHeader>
           <CardContent>
             <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
               <div className="text-center text-gray-500">
                 <MapPin className="w-12 h-12 mx-auto mb-2" />
                 <p className="text-sm">Interactive map would be embedded here</p>
-                <p className="text-xs">G-10/4, Islamabad, Pakistan</p>
+                <p className="text-xs">Lahore, Pakistan</p>
               </div>
             </div>
           </CardContent>

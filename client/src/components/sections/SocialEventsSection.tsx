@@ -7,21 +7,21 @@ export const SocialEventsSection = () => {
     {
       icon: <Music className="w-8 h-8 text-purple-600" />,
       title: "Qawwali Night",
-      date: "March 15, 2025 - 7:00 PM",
+      date: "November 28, 2025 - 7:00 PM",
       description: "Experience the soulful melodies of traditional Qawwali music performed by renowned artists. A cultural evening celebrating South Asian heritage.",
       highlights: ["Live Qawwali performance", "Traditional refreshments", "Cultural networking"]
     },
     {
       icon: <Star className="w-8 h-8 text-yellow-600" />,
       title: "Delegates Concert",
-      date: "March 16, 2025 - 8:00 PM",
+      date: "November 30, 2025 - 8:00 PM",
       description: "Showcase your talents! An evening where delegates can perform, from musical acts to poetry, celebrating the diverse talents of our participants.",
       highlights: ["Open mic performances", "Talent showcase", "Awards ceremony"]
     },
     {
       icon: <Users className="w-8 h-8 text-green-600" />,
       title: "Cultural Exchange Fair",
-      date: "March 15, 2025 - 12:00 PM",
+      date: "November 29, 2025 - 12:00 PM",
       description: "Explore different cultures through interactive booths, traditional foods, and cultural displays set up by participating schools.",
       highlights: ["International cuisine", "Cultural displays", "Traditional games"]
     }

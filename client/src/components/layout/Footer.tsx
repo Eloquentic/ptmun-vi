@@ -35,7 +35,7 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-gray-400">
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                +92 XXX XXXXXXX
+                +92 42 XXX XXXX
               </li>
               <li className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
@@ -43,7 +43,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
-                Islamabad Campus
+                Lahore Campus
               </li>
             </ul>
           </div>

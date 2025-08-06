@@ -14,7 +14,7 @@ export const HeroSection = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="mb-8">
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
-            <span className="text-white/90 text-sm">PakTürk Maarif International Schools</span>
+            <span className="text-white/90 text-sm">PakTürk Maarif International Schools - Lahore</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
@@ -33,11 +33,12 @@ export const HeroSection = () => {
         <div className="mb-8">
           <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-6">
             <p className="text-white/90 text-lg mb-2">Event Dates</p>
-            <p className="text-2xl font-bold text-yellow-400">March 15-16, 2025</p>
+            <p className="text-2xl font-bold text-yellow-400">November 28-30, 2025</p>
+            <p className="text-sm text-white/70 mt-1">(Tentative - Final dates to be confirmed)</p>
           </div>
         </div>
 
-        <CountdownTimer targetDate="2025-03-15T09:00:00" />
+        <CountdownTimer targetDate="2025-11-28T09:00:00" />
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <Button 
