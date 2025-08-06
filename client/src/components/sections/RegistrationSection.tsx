@@ -30,7 +30,7 @@ export const RegistrationSection = () => {
     "UN Security Council (UNSC)", 
     "UN General Assembly (UNGA)",
     "International Court of Justice x Crisis (ICJ x CRISIS)",
-    "Press and Media Committee (PNA)",
+    "Pakistan National Assembly (PNA)",
     "UN Human Rights Council (UNHRC)"
   ];
 

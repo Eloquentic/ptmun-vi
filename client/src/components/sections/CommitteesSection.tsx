@@ -33,10 +33,10 @@ export const CommitteesSection = () => {
       level: "Advanced"
     },
     {
-      name: "Press and Media Committee",
+      name: "Pakistan National Assembly",
       abbreviation: "PNA",
-      agenda: "Media Coverage of International Diplomatic Events",
-      description: "Documenting and reporting on conference proceedings",
+      agenda: "Domestic Policy and Legislative Proceedings",
+      description: "Simulating Pakistan's national legislative body and parliamentary procedures",
       level: "All Levels"
     },
     {
