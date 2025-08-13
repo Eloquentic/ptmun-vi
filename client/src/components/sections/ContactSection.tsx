@@ -72,7 +72,7 @@ export const ContactSection = () => {
     "General Inquiry",
     "Registration Support",
     "Committee Information",
-    "Payment Issues", 
+    "Payment Issues",
     "Accommodation Help",
     "Technical Support",
     "Media and Press",
@@ -85,7 +85,7 @@ export const ContactSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have questions about PTMUN VI 2025? We're here to help! 
+            Have questions about PTMUN VI 2025? We're here to help!
             Reach out to us through any of the channels below.
           </p>
         </div>
@@ -123,7 +123,7 @@ export const ContactSection = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <a 
+                  <a
                     href="https://wa.me/923001234567"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -132,7 +132,7 @@ export const ContactSection = () => {
                     <MessageSquare className="w-4 h-4 text-green-600 mr-2" />
                     <span className="text-green-800 font-medium">WhatsApp Chat</span>
                   </a>
-                  <button 
+                  <button
                     onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
                     className="flex items-center p-3 bg-blue-100 rounded-lg hover:bg-blue-200 transition-colors w-full text-left"
                   >
@@ -163,7 +163,7 @@ export const ContactSection = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="contact-name">Full Name *</Label>
-                        <Input 
+                        <Input
                           id="contact-name"
                           required
                           value={formData.name}
@@ -172,7 +172,7 @@ export const ContactSection = () => {
                       </div>
                       <div>
                         <Label htmlFor="contact-email">Email Address *</Label>
-                        <Input 
+                        <Input
                           id="contact-email"
                           type="email"
                           required
@@ -185,7 +185,7 @@ export const ContactSection = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="contact-phone">Phone Number</Label>
-                        <Input 
+                        <Input
                           id="contact-phone"
                           value={formData.phone}
                           onChange={(e) => handleInputChange('phone', e.target.value)}
@@ -210,7 +210,7 @@ export const ContactSection = () => {
 
                     <div>
                       <Label htmlFor="contact-message">Message *</Label>
-                      <Textarea 
+                      <Textarea
                         id="contact-message"
                         required
                         rows={5}
