@@ -26,27 +26,27 @@ export const FeeStructureSection = () => {
   const delegationFees = [
     {
       type: "Small Delegation",
-      subtitle: "(3-5 delegates)",
-      price: "PKR 12,000",
-      perDelegate: "PKR 2,400 per delegate",
+      subtitle: "(2-3 delegates)",
+      price: "PKR 3,200 per delegate",
+      perDelegate: "Save PKR 300 per delegate",
       icon: <Users className="w-6 h-6 text-purple-600" />,
-      savings: "Save up to PKR 6,500"
+      totalPrice: "Total: PKR 6,400 - 9,600"
     },
     {
       type: "Medium Delegation", 
-      subtitle: "(6-10 delegates)",
-      price: "PKR 20,000",
-      perDelegate: "PKR 2,000 per delegate",
+      subtitle: "(4-5 delegates)",
+      price: "PKR 3,000 per delegate",
+      perDelegate: "Save PKR 500 per delegate",
       icon: <Users className="w-6 h-6 text-orange-600" />,
-      savings: "Save up to PKR 15,000"
+      totalPrice: "Total: PKR 12,000 - 15,000"
     },
     {
-      type: "Large Delegation",
-      subtitle: "(11+ delegates)",
-      price: "PKR 1,800 per delegate",
-      perDelegate: "Best value for large groups",
+      type: "Full Delegation",
+      subtitle: "(6 delegates - Maximum)",
+      price: "PKR 2,800 per delegate",
+      perDelegate: "Save PKR 700 per delegate",
       icon: <Users className="w-6 h-6 text-red-600" />,
-      savings: "Maximum savings"
+      totalPrice: "Total: PKR 16,800"
     }
   ];
 
@@ -67,8 +67,8 @@ export const FeeStructureSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Fee Structure</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Competitive and transparent pricing with early bird discounts and 
-            special rates for school delegations.
+            Competitive pricing with early bird discounts and moderate group rates 
+            for school delegations to support our quality social events program.
           </p>
         </div>
 
@@ -112,16 +112,37 @@ export const FeeStructureSection = () => {
                     <div className="flex justify-center mb-2">{fee.icon}</div>
                     <CardTitle className="text-lg">{fee.type}</CardTitle>
                     <p className="text-sm text-gray-600">{fee.subtitle}</p>
-                    <div className="text-2xl font-bold text-blue-600">{fee.price}</div>
-                    <p className="text-sm text-gray-600">{fee.perDelegate}</p>
-                    <Badge variant="outline" className="w-fit mx-auto text-green-600 border-green-600">
-                      {fee.savings}
-                    </Badge>
+                    <div className="text-xl font-bold text-blue-600">{fee.price}</div>
+                    <p className="text-sm text-green-600 font-medium">{fee.perDelegate}</p>
+                    <p className="text-xs text-gray-500">{fee.totalPrice}</p>
                   </CardHeader>
                 </Card>
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Important Notes */}
+        <div className="mb-8">
+          <Card className="max-w-4xl mx-auto bg-yellow-50 border-yellow-300">
+            <CardHeader>
+              <CardTitle className="text-yellow-800 text-center">Important Notes</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-yellow-700">
+                <ul className="space-y-2">
+                  <li>• Maximum 6 delegates per school delegation</li>
+                  <li>• Each committee can accommodate 1 delegate per school</li>
+                  <li>• Delegation rates apply only to registered schools</li>
+                </ul>
+                <ul className="space-y-2">
+                  <li>• Early bird discounts available until October 15</li>
+                  <li>• All prices include social events and meals</li>
+                  <li>• Payment required within 7 days of registration</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* What's Included */}
@@ -143,10 +164,10 @@ export const FeeStructureSection = () => {
         </Card>
 
         <div className="mt-8 text-center">
-          <Card className="max-w-2xl mx-auto border-yellow-300 bg-yellow-50">
+          <Card className="max-w-2xl mx-auto border-blue-300 bg-blue-50">
             <CardContent className="pt-6">
-              <h4 className="font-semibold text-yellow-800 mb-2">Payment Terms</h4>
-              <p className="text-sm text-yellow-700">
+              <h4 className="font-semibold text-blue-800 mb-2">Payment Terms</h4>
+              <p className="text-sm text-blue-700">
                 • Full payment required to confirm registration<br/>
                 • Bank transfer and online payment options available<br/>
                 • No refunds after November 15, 2025<br/>

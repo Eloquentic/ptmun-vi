@@ -16,10 +16,8 @@ export const Header = () => {
   const menuItems = [
     { label: 'About', id: 'about' },
     { label: 'Committees', id: 'committees' },
-    { label: 'Secretariat', id: 'secretariat' },
     { label: 'Events', id: 'events' },
     { label: 'Register', id: 'registration' },
-    { label: 'Gallery', id: 'gallery' },
     { label: 'Contact', id: 'contact' },
   ];
 
