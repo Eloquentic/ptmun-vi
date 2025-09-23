@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { CountdownTimer } from '@/components/ui/CountdownTimer';
@@ -8,8 +9,8 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 overflow-hidden">
-      <div className="absolute inset-0 bg-black/20"></div>
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-950 overflow-hidden">
+      <div className="absolute inset-0 bg-black/30"></div>
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto w-full py-16">
         <div className="mb-6">

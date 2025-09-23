@@ -1,3 +1,4 @@
+
 export default {
   darkMode: ['class'],
   content: ['./client/index.html', './client/src/**/*.{js,jsx,ts,tsx}'],
@@ -48,6 +49,12 @@ export default {
           3: 'hsl(var(--chart-3))',
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
+        },
+        blue: {
+          950: '#172554',
+        },
+        indigo: {
+          950: '#1e1b4b',
         },
       },
     },
