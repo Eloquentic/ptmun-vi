@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -24,11 +25,9 @@ export const Header = () => {
   return (
     <header className="bg-white/95 backdrop-blur-sm border-b sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3 flex-shrink-0">
-            <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">PT</span>
-            </div>
+            <img src="/assets/logo.png" alt="PTMUN VI Logo" className="h-16 w-16" />
             <div className="whitespace-nowrap">
               <h1 className="font-bold text-lg leading-tight">PTMUN VI</h1>
               <p className="text-xs text-muted-foreground">2025</p>

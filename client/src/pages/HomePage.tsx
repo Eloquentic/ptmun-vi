@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { AboutSection } from '@/components/sections/AboutSection';
@@ -8,6 +9,7 @@ import { FeeStructureSection } from '@/components/sections/FeeStructureSection';
 import { RegistrationSection } from '@/components/sections/RegistrationSection';
 import { TestimonialsSection } from '@/components/sections/TestimonialsSection';
 import { FAQSection } from '@/components/sections/FAQSection';
+import { ExecutiveCouncilSection } from '@/components/sections/ExecutiveCouncilSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 
 export const HomePage = () => {
@@ -22,6 +24,7 @@ export const HomePage = () => {
       <RegistrationSection />
       <TestimonialsSection />
       <FAQSection />
+      <ExecutiveCouncilSection />
       <ContactSection />
     </>
   );

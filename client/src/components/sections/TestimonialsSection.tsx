@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Quote } from 'lucide-react';
@@ -14,7 +15,7 @@ export const TestimonialsSection = () => {
     },
     {
       name: "Hassan Ali",
-      school: "Karachi American School",
+      school: "Lahore American School",
       year: "PTMUN IV 2023",
       rating: 5,
       quote: "The cultural events at PTMUN were incredible! The Qawwali night was a beautiful celebration of our heritage. The conference perfectly balanced serious committee work with amazing social experiences.",
@@ -22,7 +23,7 @@ export const TestimonialsSection = () => {
     },
     {
       name: "Fatima Khan",
-      school: "International School of Islamabad",
+      school: "TNS Beaconhouse, Lahore",
       year: "PTMUN V 2024",
       rating: 5,
       quote: "As a first-time delegate, I was nervous, but the chairs were so supportive. PTMUN helped me discover my passion for international relations. I'm already excited for PTMUN VI!",

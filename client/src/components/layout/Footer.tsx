@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { MapPin, Phone, Mail, Instagram } from 'lucide-react';
 
@@ -8,9 +9,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xs">PT</span>
-              </div>
+              <img src="/assets/logo.png" alt="PTMUN VI Logo" className="h-12 w-12" />
               <div>
                 <h3 className="font-bold">PTMUN VI 2025</h3>
               </div>
