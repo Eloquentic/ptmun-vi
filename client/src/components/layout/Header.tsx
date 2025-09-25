@@ -26,13 +26,13 @@ export const Header = () => {
     <header className="bg-white/95 backdrop-blur-sm border-b sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center space-x-3 flex-shrink-0">
+          <button onClick={() => scrollToSection('hero')} className="flex items-center space-x-3 flex-shrink-0">
             <img src="/assets/logo.png" alt="PTMUN VI Logo" className="h-16 w-16" />
-            <div className="whitespace-nowrap">
+            <div className="whitespace-nowrap text-left">
               <h1 className="font-bold text-lg leading-tight">PTMUN VI</h1>
               <p className="text-xs text-muted-foreground">2025</p>
             </div>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-3 xl:space-x-4">
@@ -40,7 +40,7 @@ export const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium hover:text-blue-600 transition-colors px-2 py-1 rounded"
+                className="text-sm font-medium hover:text-indigo-950 transition-colors px-2 py-1 rounded"
               >
                 {item.label}
               </button>
@@ -67,7 +67,7 @@ export const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left py-2 text-sm font-medium hover:text-blue-600 transition-colors"
+                  className="text-left py-2 text-sm font-medium hover:text-indigo-950 transition-colors"
                 >
                   {item.label}
                 </button>

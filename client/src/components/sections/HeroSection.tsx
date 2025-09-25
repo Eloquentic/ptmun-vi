@@ -8,8 +8,12 @@ export const HeroSection = () => {
     document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const scrollToAbout = () => {
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-950 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-950 via-blue-900 to-indigo-950 overflow-hidden">
       <div className="absolute inset-0 bg-black/30"></div>
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto w-full py-16">
@@ -55,6 +59,7 @@ export const HeroSection = () => {
             size="lg" 
             variant="outline" 
             className="border-white text-white bg-transparent hover:bg-white hover:text-blue-900 transition-colors"
+            onClick={scrollToAbout}
           >
             Learn More
           </Button>

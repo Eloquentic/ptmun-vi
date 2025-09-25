@@ -56,7 +56,7 @@ export const SocialEventsSection = () => {
                   <ul className="space-y-1">
                     {event.highlights.map((highlight, idx) => (
                       <li key={idx} className="text-sm text-gray-600 flex items-center">
-                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-2"></div>
+                        <div className="w-1.5 h-1.5 bg-indigo-950 rounded-full mr-2"></div>
                         {highlight}
                       </li>
                     ))}

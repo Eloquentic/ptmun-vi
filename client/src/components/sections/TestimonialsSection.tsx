@@ -71,7 +71,7 @@ export const TestimonialsSection = () => {
             <Card key={index} className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <CardContent className="pt-6 flex-1 flex flex-col">
                 <div className="flex items-center mb-4">
-                  <Quote className="w-8 h-8 text-blue-600 mr-3 flex-shrink-0" />
+                  <Quote className="w-8 h-8 text-indigo-950 mr-3 flex-shrink-0" />
                   <div className="flex">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
@@ -87,8 +87,8 @@ export const TestimonialsSection = () => {
                   <div className="font-semibold text-gray-800">{testimonial.name}</div>
                   <div className="text-sm text-gray-600">{testimonial.school}</div>
                   <div className="flex justify-between items-center mt-2">
-                    <span className="text-xs text-blue-600 font-medium">{testimonial.year}</span>
-                    <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                    <span className="text-xs text-indigo-950 font-medium">{testimonial.year}</span>
+                    <span className="text-xs bg-blue-100 text-blue-950 px-2 py-1 rounded">
                       {testimonial.committee}
                     </span>
                   </div>
@@ -100,7 +100,7 @@ export const TestimonialsSection = () => {
 
         {/* Statistics */}
         <div className="mt-16">
-          <Card className="bg-blue-600 text-white">
+          <Card className="bg-indigo-950 text-white">
             <CardContent className="pt-8">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
                 <div>
@@ -133,13 +133,13 @@ export const TestimonialsSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              className="bg-indigo-950 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-950 transition-colors"
             >
               Register for PTMUN VI
             </button>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="border border-indigo-950 text-indigo-950 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
             >
               Contact Us
             </button>

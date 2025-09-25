@@ -69,7 +69,7 @@ export const SecretariatSection = () => {
                   </span>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-blue-600 font-medium mb-4">{member.role}</p>
+                <p className="text-indigo-950 font-medium mb-4">{member.role}</p>
                 <div className="space-y-2 text-sm text-gray-600">
                   <div className="flex items-center justify-center">
                     <Phone className="w-4 h-4 mr-2" />

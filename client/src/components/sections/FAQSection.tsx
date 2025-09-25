@@ -89,7 +89,7 @@ export const FAQSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 mb-8">
             {categories.map((category) => (
               <div key={category} className="text-center">
-                <span className="inline-block bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">
+                <span className="inline-block bg-blue-100 text-blue-950 text-xs px-3 py-1 rounded-full">
                   {category}
                 </span>
               </div>
@@ -105,7 +105,7 @@ export const FAQSection = () => {
                 >
                   <CardTitle className="flex items-center justify-between text-lg">
                     <div className="flex items-center">
-                      <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded mr-3">
+                      <span className="bg-indigo-950 text-white text-xs px-2 py-1 rounded mr-3">
                         {faq.category}
                       </span>
                       <span>{faq.question}</span>
@@ -131,23 +131,23 @@ export const FAQSection = () => {
         <div className="mt-12 text-center">
           <Card className="max-w-2xl mx-auto bg-blue-50 border-blue-200">
             <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold text-blue-800 mb-3">
+              <h3 className="text-xl font-semibold text-blue-950 mb-3">
                 Still Have Questions?
               </h3>
-              <p className="text-blue-700 mb-4">
+              <p className="text-blue-950 mb-4">
                 Our team is here to help! Reach out to us for any additional 
                 information about PTMUN VI 2025.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  className="bg-indigo-950 text-white px-6 py-2 rounded-lg hover:bg-blue-950 transition-colors"
                 >
                   Contact Us
                 </button>
                 <a 
                   href="mailto:info@ptmun2025.com"
-                  className="border border-blue-600 text-blue-600 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors"
+                  className="border border-indigo-950 text-indigo-950 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors"
                 >
                   Send Email
                 </a>

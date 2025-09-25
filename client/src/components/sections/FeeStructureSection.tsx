@@ -17,7 +17,7 @@ export const FeeStructureSection = () => {
       type: "Regular",
       price: "PKR 4,500",
       deadline: "November 15, 2025",
-      icon: <User className="w-6 h-6 text-blue-600" />,
+      icon: <User className="w-6 h-6 text-indigo-950" />,
       savings: null,
       popular: false
     }
@@ -87,7 +87,7 @@ export const FeeStructureSection = () => {
                   <CardHeader className="text-center">
                     <div className="flex justify-center mb-2">{fee.icon}</div>
                     <CardTitle className="text-xl">{fee.type} Registration</CardTitle>
-                    <div className="text-3xl font-bold text-blue-600">{fee.price}</div>
+                    <div className="text-3xl font-bold text-indigo-950">{fee.price}</div>
                     {fee.savings && (
                       <Badge variant="outline" className="w-fit mx-auto text-green-600 border-green-600">
                         {fee.savings}
@@ -112,7 +112,7 @@ export const FeeStructureSection = () => {
                     <div className="flex justify-center mb-2">{fee.icon}</div>
                     <CardTitle className="text-lg">{fee.type}</CardTitle>
                     <p className="text-sm text-gray-600">{fee.subtitle}</p>
-                    <div className="text-xl font-bold text-blue-600">{fee.price}</div>
+                    <div className="text-xl font-bold text-indigo-950">{fee.price}</div>
                     <p className="text-sm text-green-600 font-medium">{fee.perDelegate}</p>
                     <p className="text-xs text-gray-500">{fee.totalPrice}</p>
                   </CardHeader>
@@ -148,8 +148,8 @@ export const FeeStructureSection = () => {
         {/* What's Included */}
         <Card className="max-w-4xl mx-auto bg-blue-50">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-blue-800">What's Included</CardTitle>
-            <p className="text-blue-600">All registration fees include:</p>
+            <CardTitle className="text-2xl text-blue-950">What's Included</CardTitle>
+            <p className="text-indigo-950">All registration fees include:</p>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -166,8 +166,8 @@ export const FeeStructureSection = () => {
         <div className="mt-8 text-center">
           <Card className="max-w-2xl mx-auto border-blue-300 bg-blue-50">
             <CardContent className="pt-6">
-              <h4 className="font-semibold text-blue-800 mb-2">Payment Terms</h4>
-              <p className="text-sm text-blue-700">
+              <h4 className="font-semibold text-blue-950 mb-2">Payment Terms</h4>
+              <p className="text-sm text-blue-950">
                 • Full payment required to confirm registration<br/>
                 • Bank transfer and online payment options available<br/>
                 • No refunds after November 15, 2025<br/>

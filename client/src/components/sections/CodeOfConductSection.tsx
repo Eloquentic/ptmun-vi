@@ -5,22 +5,22 @@ import { Shield, Users, Gavel, AlertTriangle } from 'lucide-react';
 export const CodeOfConductSection = () => {
   const principles = [
     {
-      icon: <Shield className="w-6 h-6 text-blue-600" />,
+      icon: <Shield className="w-6 h-6 text-indigo-950" />,
       title: "Respectful Behavior",
       description: "All participants must maintain dignity and respect in all interactions"
     },
     {
-      icon: <Users className="w-6 h-6 text-blue-600" />,
+      icon: <Users className="w-6 h-6 text-indigo-950" />,
       title: "Professional Conduct",
       description: "Delegates should embody the spirit of diplomatic professionalism"
     },
     {
-      icon: <Gavel className="w-6 h-6 text-blue-600" />,
+      icon: <Gavel className="w-6 h-6 text-indigo-950" />,
       title: "Academic Integrity",
       description: "All research and positions must be original and properly attributed"
     },
     {
-      icon: <AlertTriangle className="w-6 h-6 text-blue-600" />,
+      icon: <AlertTriangle className="w-6 h-6 text-indigo-950" />,
       title: "Zero Tolerance",
       description: "No harassment, discrimination, or inappropriate behavior will be tolerated"
     }
@@ -50,7 +50,7 @@ export const CodeOfConductSection = () => {
             <h3 className="text-3xl font-semibold mb-8">Core Principles</h3>
             <div className="space-y-6">
               {principles.map((principle, index) => (
-                <Card key={index} className="border-l-4 border-l-blue-600">
+                <Card key={index} className="border-l-4 border-l-indigo-950">
                   <CardContent className="pt-6">
                     <div className="flex items-start space-x-4">
                       <div className="flex-shrink-0">{principle.icon}</div>
@@ -98,14 +98,14 @@ export const CodeOfConductSection = () => {
 
             <Card className="mt-6 bg-blue-50 border-blue-200">
               <CardHeader>
-                <CardTitle className="text-blue-800">Reporting Violations</CardTitle>
+                <CardTitle className="text-blue-950">Reporting Violations</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-blue-700 mb-3">
+                <p className="text-blue-950 mb-3">
                   If you witness or experience any violation of this code of conduct, 
                   please report it immediately to:
                 </p>
-                <ul className="text-blue-700 space-y-1">
+                <ul className="text-blue-950 space-y-1">
                   <li>• Your committee Chair</li>
                   <li>• Any Secretariat member</li>
                   <li>• Conference organizers</li>

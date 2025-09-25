@@ -31,7 +31,7 @@ export const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: <Phone className="w-6 h-6 text-blue-600" />,
+      icon: <Phone className="w-6 h-6 text-indigo-950" />,
       title: "Phone Numbers",
       details: [
         "Main Office: +92 42 XXX XXXX",
@@ -40,7 +40,7 @@ export const ContactSection = () => {
       ]
     },
     {
-      icon: <Mail className="w-6 h-6 text-blue-600" />,
+      icon: <Mail className="w-6 h-6 text-indigo-950" />,
       title: "Email Addresses",
       details: [
         "General: info@ptmun2025.com",
@@ -49,7 +49,7 @@ export const ContactSection = () => {
       ]
     },
     {
-      icon: <MapPin className="w-6 h-6 text-blue-600" />,
+      icon: <MapPin className="w-6 h-6 text-indigo-950" />,
       title: "Campus Location",
       details: [
         "Pak-Turk Maarif International Schools",
@@ -58,7 +58,7 @@ export const ContactSection = () => {
       ]
     },
     {
-      icon: <Clock className="w-6 h-6 text-blue-600" />,
+      icon: <Clock className="w-6 h-6 text-indigo-950" />,
       title: "Office Hours",
       details: [
         "Monday - Friday: 8:00 AM - 4:00 PM",
@@ -116,7 +116,7 @@ export const ContactSection = () => {
             {/* Quick Links */}
             <Card className="mt-6 bg-blue-50 border-blue-200">
               <CardHeader>
-                <CardTitle className="text-blue-800 flex items-center">
+                <CardTitle className="text-blue-950 flex items-center">
                   <MessageSquare className="w-5 h-5 mr-2" />
                   Quick Actions
                 </CardTitle>
@@ -136,8 +136,8 @@ export const ContactSection = () => {
                     onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
                     className="flex items-center p-3 bg-blue-100 rounded-lg hover:bg-blue-200 transition-colors w-full text-left"
                   >
-                    <CheckCircle className="w-4 h-4 text-blue-600 mr-2" />
-                    <span className="text-blue-800 font-medium">Register Now</span>
+                    <CheckCircle className="w-4 h-4 text-indigo-950 mr-2" />
+                    <span className="text-blue-950 font-medium">Register Now</span>
                   </button>
                 </div>
               </CardContent>

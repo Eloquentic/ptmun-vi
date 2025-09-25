@@ -224,11 +224,11 @@ Submitted on: ${new Date().toLocaleString()}
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card 
-                className="cursor-pointer hover:shadow-lg transition-shadow border-2 hover:border-blue-500"
+                className="cursor-pointer hover:shadow-lg transition-shadow border-2 hover:border-indigo-950"
                 onClick={() => setRegistrationType('individual')}
               >
                 <CardHeader className="text-center">
-                  <User className="w-16 h-16 mx-auto mb-4 text-blue-600" />
+                  <User className="w-16 h-16 mx-auto mb-4 text-indigo-950" />
                   <CardTitle className="text-2xl">Individual Delegate</CardTitle>
                   <p className="text-gray-600">Register as a single participant</p>
                 </CardHeader>

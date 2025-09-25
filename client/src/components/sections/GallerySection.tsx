@@ -127,7 +127,7 @@ export const GallerySection = () => {
                       <Play className="w-3 h-3" />
                     </div>
                   ) : (
-                    <div className="bg-blue-500 text-white p-1 rounded">
+                    <div className="bg-indigo-950 text-white p-1 rounded">
                       <ImageIcon className="w-3 h-3" />
                     </div>
                   )}
@@ -145,10 +145,10 @@ export const GallerySection = () => {
         <div className="text-center mt-12">
           <Card className="max-w-2xl mx-auto bg-blue-50 border-blue-200">
             <CardContent className="pt-6">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-4">
+              <h3 className="text-2xl font-semibold text-blue-950 mb-4">
                 Be Part of PTMUN VI 2025
               </h3>
-              <p className="text-blue-700 mb-4">
+              <p className="text-blue-950 mb-4">
                 Create your own memorable moments at our upcoming conference. 
                 Join hundreds of delegates from across Pakistan and beyond.
               </p>

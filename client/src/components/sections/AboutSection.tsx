@@ -5,17 +5,17 @@ import { Users, Globe, Award } from 'lucide-react';
 export const AboutSection = () => {
   const values = [
     {
-      icon: <Globe className="w-8 h-8 text-blue-600" />,
+      icon: <Globe className="w-8 h-8 text-indigo-950" />,
       title: "Global Education",
       description: "Fostering international understanding through diplomatic simulation"
     },
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
+      icon: <Users className="w-8 h-8 text-indigo-950" />,
       title: "Mutual Respect",
       description: "Building bridges across cultures and promoting peaceful dialogue"
     },
     {
-      icon: <Award className="w-8 h-8 text-blue-600" />,
+      icon: <Award className="w-8 h-8 text-indigo-950" />,
       title: "Excellence in Diplomacy",
       description: "Developing future leaders through Model United Nations experience"
     }
@@ -52,19 +52,19 @@ export const AboutSection = () => {
           <div className="bg-white rounded-lg p-8 shadow-lg">
             <div className="grid grid-cols-2 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">5+</div>
+                <div className="text-3xl font-bold text-indigo-950 mb-2">5+</div>
                 <div className="text-sm text-gray-600">Years of Excellence</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                <div className="text-3xl font-bold text-indigo-950 mb-2">500+</div>
                 <div className="text-sm text-gray-600">Delegates Served</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">6</div>
+                <div className="text-3xl font-bold text-indigo-950 mb-2">6</div>
                 <div className="text-sm text-gray-600">Committees</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">30+</div>
+                <div className="text-3xl font-bold text-indigo-950 mb-2">30+</div>
                 <div className="text-sm text-gray-600">Schools Participated</div>
               </div>
             </div>

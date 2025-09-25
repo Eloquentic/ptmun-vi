@@ -45,7 +45,7 @@ export const ExecutiveCouncilSection = () => {
                   <User className="w-12 h-12 text-gray-500" />
                 </div>
                 <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                <p className="text-blue-600 font-medium">{member.role}</p>
+                <p className="text-indigo-950 font-medium">{member.role}</p>
               </CardContent>
             </Card>
           ))}
