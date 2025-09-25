@@ -67,10 +67,12 @@ export default defineConfig(({ mode }) => {
       hmr: {
         overlay: false,
       },
+      open: true,
       host: true,
       port: vitePort,
       allowedHosts: true,
       cors: true, // Enable CORS in the dev server
+      base: process.env.VITE_BASE_PATH || "/ptmun-vi",
       proxy: {
         '/api/': {
           target: 'http://localhost:3001',
@@ -86,6 +88,6 @@ export default defineConfig(({ mode }) => {
     esbuild: {
       sourcemap: true,
     },
-    base: process.env.VITE_BASE_PATH || "/"
+    
   };
 });
