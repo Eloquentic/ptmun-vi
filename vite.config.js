@@ -86,6 +86,6 @@ export default defineConfig(({ mode }) => {
     esbuild: {
       sourcemap: true,
     },
-    base: process.env.VITE_BASE_PATH || "/ptmun-vi"
+    base: process.env.VITE_BASE_PATH || "/"
   };
 });
