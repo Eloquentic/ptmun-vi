@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -31,7 +32,7 @@ export const ContactSection = () => {
 
   const contactInfo = [
     {
-      icon: <Phone className="w-6 h-6 text-indigo-950" />,
+      icon: <Phone className="w-6 h-6 text-primary" />,
       title: "Phone Numbers",
       details: [
         "Main Office: +92 42 XXX XXXX",
@@ -40,7 +41,7 @@ export const ContactSection = () => {
       ]
     },
     {
-      icon: <Mail className="w-6 h-6 text-indigo-950" />,
+      icon: <Mail className="w-6 h-6 text-primary" />,
       title: "Email Addresses",
       details: [
         "General: info@ptmun2025.com",
@@ -49,7 +50,7 @@ export const ContactSection = () => {
       ]
     },
     {
-      icon: <MapPin className="w-6 h-6 text-indigo-950" />,
+      icon: <MapPin className="w-6 h-6 text-primary" />,
       title: "Campus Location",
       details: [
         "Pak-Turk Maarif International Schools",
@@ -58,7 +59,7 @@ export const ContactSection = () => {
       ]
     },
     {
-      icon: <Clock className="w-6 h-6 text-indigo-950" />,
+      icon: <Clock className="w-6 h-6 text-primary" />,
       title: "Office Hours",
       details: [
         "Monday - Friday: 8:00 AM - 4:00 PM",
@@ -80,11 +81,11 @@ export const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Have questions about PTMUN VI 2025? We're here to help!
             Reach out to us through any of the channels below.
           </p>
@@ -103,7 +104,7 @@ export const ContactSection = () => {
                         <h3 className="font-semibold mb-2">{info.title}</h3>
                         <div className="space-y-1">
                           {info.details.map((detail, idx) => (
-                            <p key={idx} className="text-sm text-gray-600">{detail}</p>
+                            <p key={idx} className="text-sm text-muted-foreground">{detail}</p>
                           ))}
                         </div>
                       </div>
@@ -114,9 +115,9 @@ export const ContactSection = () => {
             </div>
 
             {/* Quick Links */}
-            <Card className="mt-6 bg-blue-50 border-blue-200">
+            <Card className="mt-6 bg-secondary border-border">
               <CardHeader>
-                <CardTitle className="text-blue-950 flex items-center">
+                <CardTitle className="text-primary flex items-center">
                   <MessageSquare className="w-5 h-5 mr-2" />
                   Quick Actions
                 </CardTitle>
@@ -127,17 +128,17 @@ export const ContactSection = () => {
                     href="https://wa.me/923001234567"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center p-3 bg-green-100 rounded-lg hover:bg-green-200 transition-colors"
+                    className="flex items-center p-3 bg-green-100 dark:bg-green-900/50 rounded-lg hover:bg-green-200 dark:hover:bg-green-900 transition-colors"
                   >
                     <MessageSquare className="w-4 h-4 text-green-600 mr-2" />
-                    <span className="text-green-800 font-medium">WhatsApp Chat</span>
+                    <span className="text-green-800 dark:text-green-300 font-medium">WhatsApp Chat</span>
                   </a>
                   <button
                     onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
-                    className="flex items-center p-3 bg-blue-100 rounded-lg hover:bg-blue-200 transition-colors w-full text-left"
+                    className="flex items-center p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg hover:bg-blue-200 dark:hover:bg-blue-900 transition-colors w-full text-left"
                   >
-                    <CheckCircle className="w-4 h-4 text-indigo-950 mr-2" />
-                    <span className="text-blue-950 font-medium">Register Now</span>
+                    <CheckCircle className="w-4 h-4 text-primary mr-2" />
+                    <span className="text-primary font-medium">Register Now</span>
                   </button>
                 </div>
               </CardContent>
@@ -149,14 +150,14 @@ export const ContactSection = () => {
             <Card>
               <CardHeader>
                 <CardTitle>Send us a Message</CardTitle>
-                <p className="text-gray-600">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <p className="text-muted-foreground">Fill out the form below and we'll get back to you as soon as possible.</p>
               </CardHeader>
               <CardContent>
                 {submitted ? (
                   <div className="text-center py-8">
                     <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-green-800 mb-2">Message Sent!</h3>
-                    <p className="text-green-700">Thank you for contacting us. We'll respond within 24 hours.</p>
+                    <h3 className="text-xl font-semibold text-green-800 dark:text-green-300 mb-2">Message Sent!</h3>
+                    <p className="text-green-700 dark:text-green-400">Thank you for contacting us. We'll respond within 24 hours.</p>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -234,7 +235,7 @@ export const ContactSection = () => {
         <Card>
           <CardHeader>
             <CardTitle>Find Us</CardTitle>
-            <p className="text-gray-600">Pak-Turk Maarif International Schools, Raiwind Rd, Block D OPF Housing Scheme, Lahore, 54000</p>
+            <p className="text-muted-foreground">Pak-Turk Maarif International Schools, Raiwind Rd, Block D OPF Housing Scheme, Lahore, 54000</p>
           </CardHeader>
           <CardContent>
             <div className="aspect-video rounded-lg overflow-hidden">
@@ -247,6 +248,7 @@ export const ContactSection = () => {
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Pak-Turk Maarif International Schools Location"
+                className="dark:grayscale dark:invert"
               />
             </div>
           </CardContent>

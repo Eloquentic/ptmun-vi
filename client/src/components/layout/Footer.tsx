@@ -8,33 +8,33 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white py-12 dark:bg-background dark:border-t">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <button onClick={scrollToHero} className="flex items-center space-x-2 mb-4 text-left">
               <img src="/assets/logo.png" alt="PTMUN VI Logo" className="h-12 w-12" />
               <div>
-                <h3 className="font-bold">PTMUN VI 2025</h3>
+                <h3 className="font-bold text-white dark:text-foreground">PTMUN VI 2025</h3>
               </div>
             </button>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 dark:text-muted-foreground">
               Pak-Turk Maarif International Schools Model United Nations
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#about" className="hover:text-white">About PTMUN</a></li>
-              <li><a href="#committees" className="hover:text-white">Committees</a></li>
-              <li><a href="#registration" className="hover:text-white">Registration</a></li>
+            <h4 className="font-semibold mb-4 text-white dark:text-foreground">Quick Links</h4>
+            <ul className="space-y-2 text-sm text-gray-400 dark:text-muted-foreground">
+              <li><a href="#about" className="hover:text-white dark:hover:text-primary">About PTMUN</a></li>
+              <li><a href="#committees" className="hover:text-white dark:hover:text-primary">Committees</a></li>
+              <li><a href="#registration" className="hover:text-white dark:hover:text-primary">Registration</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Contact Info</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <h4 className="font-semibold mb-4 text-white dark:text-foreground">Contact Info</h4>
+            <ul className="space-y-2 text-sm text-gray-400 dark:text-muted-foreground">
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
                 +92 42 XXX XXXX
@@ -51,16 +51,16 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Follow Us</h4>
+            <h4 className="font-semibold mb-4 text-white dark:text-foreground">Follow Us</h4>
             <div className="flex space-x-3">
-              <a href="https://www.instagram.com/ptmun.vi" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+              <a href="https://www.instagram.com/ptmun.vi" target="_blank" rel="noopener noreferrer" className="text-gray-400 dark:text-muted-foreground hover:text-white dark:hover:text-primary">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-400">
+        <div className="border-t border-gray-800 dark:border-border mt-8 pt-6 text-center text-sm text-gray-400 dark:text-muted-foreground">
           <p>&copy; 2025 Pak-Turk Maarif International Schools. All rights reserved.</p>
         </div>
       </div>

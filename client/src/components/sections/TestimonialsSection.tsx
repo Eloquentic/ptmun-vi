@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Quote } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export const TestimonialsSection = () => {
   const testimonials = [
@@ -56,11 +57,11 @@ export const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">What Delegates Say</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Hear from past PTMUN participants about their transformative experiences 
             and the lasting impact of our conferences.
           </p>
@@ -71,7 +72,7 @@ export const TestimonialsSection = () => {
             <Card key={index} className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <CardContent className="pt-6 flex-1 flex flex-col">
                 <div className="flex items-center mb-4">
-                  <Quote className="w-8 h-8 text-indigo-950 mr-3 flex-shrink-0" />
+                  <Quote className="w-8 h-8 text-primary mr-3 flex-shrink-0" />
                   <div className="flex">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
@@ -79,16 +80,16 @@ export const TestimonialsSection = () => {
                   </div>
                 </div>
 
-                <blockquote className="text-gray-600 mb-6 flex-1 italic leading-relaxed">
+                <blockquote className="text-muted-foreground mb-6 flex-1 italic leading-relaxed">
                   "{testimonial.quote}"
                 </blockquote>
 
                 <div className="border-t pt-4">
-                  <div className="font-semibold text-gray-800">{testimonial.name}</div>
-                  <div className="text-sm text-gray-600">{testimonial.school}</div>
+                  <div className="font-semibold text-foreground">{testimonial.name}</div>
+                  <div className="text-sm text-muted-foreground">{testimonial.school}</div>
                   <div className="flex justify-between items-center mt-2">
-                    <span className="text-xs text-indigo-950 font-medium">{testimonial.year}</span>
-                    <span className="text-xs bg-blue-100 text-blue-950 px-2 py-1 rounded">
+                    <span className="text-xs text-primary font-medium">{testimonial.year}</span>
+                    <span className="text-xs bg-secondary text-secondary-foreground px-2 py-1 rounded">
                       {testimonial.committee}
                     </span>
                   </div>
@@ -100,24 +101,24 @@ export const TestimonialsSection = () => {
 
         {/* Statistics */}
         <div className="mt-16">
-          <Card className="bg-indigo-950 text-white">
+          <Card className="bg-primary text-primary-foreground">
             <CardContent className="pt-8">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
                 <div>
                   <div className="text-3xl font-bold mb-2">98%</div>
-                  <div className="text-blue-100">Satisfaction Rate</div>
+                  <div className="text-primary-foreground/80">Satisfaction Rate</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold mb-2">4.9/5</div>
-                  <div className="text-blue-100">Average Rating</div>
+                  <div className="text-primary-foreground/80">Average Rating</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold mb-2">95%</div>
-                  <div className="text-blue-100">Would Recommend</div>
+                  <div className="text-primary-foreground/80">Would Recommend</div>
                 </div>
                 <div>
                   <div className="text-3xl font-bold mb-2">85%</div>
-                  <div className="text-blue-100">Return Delegates</div>
+                  <div className="text-primary-foreground/80">Return Delegates</div>
                 </div>
               </div>
             </CardContent>
@@ -127,22 +128,23 @@ export const TestimonialsSection = () => {
         {/* Call to Action */}
         <div className="text-center mt-12">
           <h3 className="text-2xl font-semibold mb-4">Ready to Create Your Own PTMUN Story?</h3>
-          <p className="text-gray-600 mb-6">
+          <p className="text-muted-foreground mb-6">
             Join hundreds of students who have transformed their perspectives through PTMUN.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
+            <Button 
               onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
-              className="bg-indigo-950 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-950 transition-colors"
+              size="lg"
             >
               Register for PTMUN VI
-            </button>
-            <button 
+            </Button>
+            <Button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border border-indigo-950 text-indigo-950 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              variant="outline"
+              size="lg"
             >
               Contact Us
-            </button>
+            </Button>
           </div>
         </div>
       </div>

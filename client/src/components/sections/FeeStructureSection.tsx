@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -8,7 +9,7 @@ export const FeeStructureSection = () => {
     {
       type: "Early Bird",
       price: "PKR 3,500",
-      deadline: "October 15, 2025",
+      deadline: "September 30, 2025",
       icon: <Clock className="w-6 h-6 text-green-600" />,
       savings: "Save PKR 1,000",
       popular: true
@@ -16,8 +17,8 @@ export const FeeStructureSection = () => {
     {
       type: "Regular",
       price: "PKR 4,500",
-      deadline: "November 15, 2025",
-      icon: <User className="w-6 h-6 text-indigo-950" />,
+      deadline: "October 20, 2025",
+      icon: <User className="w-6 h-6 text-primary" />,
       savings: null,
       popular: false
     }
@@ -66,7 +67,7 @@ export const FeeStructureSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Fee Structure</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Competitive pricing with early bird discounts and moderate group rates 
             for school delegations to support our quality social events program.
           </p>
@@ -80,22 +81,22 @@ export const FeeStructureSection = () => {
               {delegateFees.map((fee, index) => (
                 <Card key={index} className={`relative ${fee.popular ? 'border-green-500 border-2' : ''}`}>
                   {fee.popular && (
-                    <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-500">
+                    <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-green-500 text-white dark:text-black">
                       Most Popular
                     </Badge>
                   )}
                   <CardHeader className="text-center">
                     <div className="flex justify-center mb-2">{fee.icon}</div>
                     <CardTitle className="text-xl">{fee.type} Registration</CardTitle>
-                    <div className="text-3xl font-bold text-indigo-950">{fee.price}</div>
+                    <div className="text-3xl font-bold text-primary">{fee.price}</div>
                     {fee.savings && (
-                      <Badge variant="outline" className="w-fit mx-auto text-green-600 border-green-600">
+                      <Badge variant="outline" className="w-fit mx-auto text-green-600 border-green-600 dark:text-green-400 dark:border-green-400">
                         {fee.savings}
                       </Badge>
                     )}
                   </CardHeader>
                   <CardContent className="text-center">
-                    <p className="text-gray-600">Deadline: {fee.deadline}</p>
+                    <p className="text-muted-foreground">Deadline: {fee.deadline}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -111,10 +112,10 @@ export const FeeStructureSection = () => {
                   <CardHeader className="text-center">
                     <div className="flex justify-center mb-2">{fee.icon}</div>
                     <CardTitle className="text-lg">{fee.type}</CardTitle>
-                    <p className="text-sm text-gray-600">{fee.subtitle}</p>
-                    <div className="text-xl font-bold text-indigo-950">{fee.price}</div>
-                    <p className="text-sm text-green-600 font-medium">{fee.perDelegate}</p>
-                    <p className="text-xs text-gray-500">{fee.totalPrice}</p>
+                    <p className="text-sm text-muted-foreground">{fee.subtitle}</p>
+                    <div className="text-xl font-bold text-primary">{fee.price}</div>
+                    <p className="text-sm text-green-600 dark:text-green-400 font-medium">{fee.perDelegate}</p>
+                    <p className="text-xs text-muted-foreground">{fee.totalPrice}</p>
                   </CardHeader>
                 </Card>
               ))}
@@ -124,19 +125,19 @@ export const FeeStructureSection = () => {
 
         {/* Important Notes */}
         <div className="mb-8">
-          <Card className="max-w-4xl mx-auto bg-yellow-50 border-yellow-300">
+          <Card className="max-w-4xl mx-auto bg-yellow-50 dark:bg-yellow-950/30 border-yellow-300 dark:border-yellow-700">
             <CardHeader>
-              <CardTitle className="text-yellow-800 text-center">Important Notes</CardTitle>
+              <CardTitle className="text-yellow-800 dark:text-yellow-300 text-center">Important Notes</CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-yellow-700">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-yellow-700 dark:text-yellow-400">
                 <ul className="space-y-2">
                   <li>• Maximum 6 delegates per school delegation</li>
                   <li>• Each committee can accommodate 1 delegate per school</li>
                   <li>• Delegation rates apply only to registered schools</li>
                 </ul>
                 <ul className="space-y-2">
-                  <li>• Early bird discounts available until October 15</li>
+                  <li>• Early bird discounts available until September 30</li>
                   <li>• All prices include social events and meals</li>
                   <li>• Payment required within 7 days of registration</li>
                 </ul>
@@ -146,17 +147,17 @@ export const FeeStructureSection = () => {
         </div>
 
         {/* What's Included */}
-        <Card className="max-w-4xl mx-auto bg-blue-50">
+        <Card className="max-w-4xl mx-auto bg-secondary">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-blue-950">What's Included</CardTitle>
-            <p className="text-indigo-950">All registration fees include:</p>
+            <CardTitle className="text-2xl text-primary">What's Included</CardTitle>
+            <p className="text-primary/80">All registration fees include:</p>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {inclusions.map((item, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">{item}</span>
+                  <span className="text-muted-foreground">{item}</span>
                 </div>
               ))}
             </div>
@@ -164,13 +165,13 @@ export const FeeStructureSection = () => {
         </Card>
 
         <div className="mt-8 text-center">
-          <Card className="max-w-2xl mx-auto border-blue-300 bg-blue-50">
+          <Card className="max-w-2xl mx-auto border-border bg-secondary">
             <CardContent className="pt-6">
-              <h4 className="font-semibold text-blue-950 mb-2">Payment Terms</h4>
-              <p className="text-sm text-blue-950">
+              <h4 className="font-semibold text-primary mb-2">Payment Terms</h4>
+              <p className="text-sm text-muted-foreground">
                 • Full payment required to confirm registration<br/>
                 • Bank transfer and online payment options available<br/>
-                • No refunds after November 15, 2025<br/>
+                • No refunds after October 20, 2025<br/>
                 • School purchase orders accepted for delegations
               </p>
             </CardContent>

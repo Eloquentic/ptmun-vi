@@ -28,11 +28,11 @@ export const ExecutiveCouncilSection = () => {
   ];
 
   return (
-    <section id="executive-council" className="py-20 bg-gray-50">
+    <section id="executive-council" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Executive Council</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Meet the core leadership team steering PTMUN VI 2025.
           </p>
         </div>
@@ -41,11 +41,11 @@ export const ExecutiveCouncilSection = () => {
           {council.map((member, index) => (
             <Card key={index} className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <div className="w-24 h-24 mx-auto mb-4 bg-gray-200 rounded-full flex items-center justify-center">
-                  <User className="w-12 h-12 text-gray-500" />
+                <div className="w-24 h-24 mx-auto mb-4 bg-secondary rounded-full flex items-center justify-center">
+                  <User className="w-12 h-12 text-muted-foreground" />
                 </div>
                 <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                <p className="text-indigo-950 font-medium">{member.role}</p>
+                <p className="text-primary font-medium">{member.role}</p>
               </CardContent>
             </Card>
           ))}

@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -169,17 +170,17 @@ Submitted on: ${new Date().toLocaleString()}
 
   if (submitted) {
     return (
-      <section id="registration" className="py-20 bg-green-50">
+      <section id="registration" className="py-20 bg-green-50 dark:bg-green-950/30">
         <div className="container mx-auto px-4">
-          <Card className="max-w-2xl mx-auto text-center border-green-200">
+          <Card className="max-w-2xl mx-auto text-center border-green-200 dark:border-green-800 bg-card">
             <CardContent className="pt-8">
               <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" />
-              <h2 className="text-3xl font-bold text-green-800 mb-4">Registration Submitted!</h2>
-              <p className="text-green-700 mb-4">
+              <h2 className="text-3xl font-bold text-green-800 dark:text-green-300 mb-4">Registration Submitted!</h2>
+              <p className="text-green-700 dark:text-green-400 mb-4">
                 Your registration form has been opened in your email client. Please send the email 
                 to complete your registration for PTMUN VI 2025.
               </p>
-              <p className="text-sm text-green-600 mb-4">
+              <p className="text-sm text-green-600 dark:text-green-500 mb-4">
                 You will receive a confirmation email with payment instructions and further details.
               </p>
               <Button 
@@ -210,11 +211,11 @@ Submitted on: ${new Date().toLocaleString()}
   }
 
   return (
-    <section id="registration" className="py-20 bg-gray-50">
+    <section id="registration" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Registration</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Secure your spot at PTMUN VI 2025. Choose between individual delegate 
             registration or school delegation registration.
           </p>
@@ -224,16 +225,16 @@ Submitted on: ${new Date().toLocaleString()}
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card 
-                className="cursor-pointer hover:shadow-lg transition-shadow border-2 hover:border-indigo-950"
+                className="cursor-pointer hover:shadow-lg transition-shadow border-2 hover:border-primary"
                 onClick={() => setRegistrationType('individual')}
               >
                 <CardHeader className="text-center">
-                  <User className="w-16 h-16 mx-auto mb-4 text-indigo-950" />
+                  <User className="w-16 h-16 mx-auto mb-4 text-primary" />
                   <CardTitle className="text-2xl">Individual Delegate</CardTitle>
-                  <p className="text-gray-600">Register as a single participant</p>
+                  <p className="text-muted-foreground">Register as a single participant</p>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-sm text-gray-600">
+                  <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Personal registration</li>
                     <li>• Choose your preferred committee</li>
                     <li>• Early bird discounts available</li>
@@ -249,10 +250,10 @@ Submitted on: ${new Date().toLocaleString()}
                 <CardHeader className="text-center">
                   <Users className="w-16 h-16 mx-auto mb-4 text-purple-600" />
                   <CardTitle className="text-2xl">School Delegation</CardTitle>
-                  <p className="text-gray-600">Register multiple delegates from your school</p>
+                  <p className="text-muted-foreground">Register multiple delegates from your school</p>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-sm text-gray-600">
+                  <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Group discounts available</li>
                     <li>• Maximum 6 delegates per school</li>
                     <li>• Bulk registration process</li>
@@ -286,12 +287,12 @@ Submitted on: ${new Date().toLocaleString()}
               </CardHeader>
               <CardContent>
                 {errors.length > 0 && (
-                  <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <div className="mb-4 p-4 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-lg">
                     <div className="flex items-start">
                       <AlertCircle className="w-5 h-5 text-red-600 mr-2 mt-0.5 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-red-800 mb-2">Please fix the following errors:</h4>
-                        <ul className="text-sm text-red-700 space-y-1">
+                        <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Please fix the following errors:</h4>
+                        <ul className="text-sm text-red-700 dark:text-red-400 space-y-1">
                           {errors.map((error, index) => (
                             <li key={index}>• {error}</li>
                           ))}
@@ -437,19 +438,19 @@ Submitted on: ${new Date().toLocaleString()}
                 >
                   Change Registration Type
                 </Button>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-muted-foreground">
                   Maximum 6 delegates per school. Additional information will be requested 
                   from head delegates privately if needed.
                 </p>
               </CardHeader>
               <CardContent>
                 {errors.length > 0 && (
-                  <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <div className="mb-4 p-4 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-lg">
                     <div className="flex items-start">
                       <AlertCircle className="w-5 h-5 text-red-600 mr-2 mt-0.5 flex-shrink-0" />
                       <div>
-                        <h4 className="font-semibold text-red-800 mb-2">Please fix the following errors:</h4>
-                        <ul className="text-sm text-red-700 space-y-1">
+                        <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2">Please fix the following errors:</h4>
+                        <ul className="text-sm text-red-700 dark:text-red-400 space-y-1">
                           {errors.map((error, index) => (
                             <li key={index}>• {error}</li>
                           ))}

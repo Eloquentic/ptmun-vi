@@ -23,7 +23,7 @@ export const Header = () => {
   ];
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm border-b sticky top-0 z-50">
+    <header className="bg-background/95 backdrop-blur-sm border-b sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <button onClick={() => scrollToSection('hero')} className="flex items-center space-x-3 flex-shrink-0">
@@ -40,7 +40,7 @@ export const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-sm font-medium hover:text-indigo-950 transition-colors px-2 py-1 rounded"
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-2 py-1 rounded"
               >
                 {item.label}
               </button>
@@ -67,7 +67,7 @@ export const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left py-2 text-sm font-medium hover:text-indigo-950 transition-colors"
+                  className="text-left py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                 >
                   {item.label}
                 </button>

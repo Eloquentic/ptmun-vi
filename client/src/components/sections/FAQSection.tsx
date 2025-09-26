@@ -1,6 +1,8 @@
+
 import * as React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export const FAQSection = () => {
   const [openIndex, setOpenIndex] = React.useState<number | null>(0);
@@ -79,7 +81,7 @@ export const FAQSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Find answers to common questions about PTMUN VI 2025. 
             Can't find what you're looking for? Contact us directly.
           </p>
@@ -89,7 +91,7 @@ export const FAQSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 mb-8">
             {categories.map((category) => (
               <div key={category} className="text-center">
-                <span className="inline-block bg-blue-100 text-blue-950 text-xs px-3 py-1 rounded-full">
+                <span className="inline-block bg-secondary text-secondary-foreground text-xs px-3 py-1 rounded-full">
                   {category}
                 </span>
               </div>
@@ -100,26 +102,26 @@ export const FAQSection = () => {
             {faqs.map((faq, index) => (
               <Card key={index} className="overflow-hidden">
                 <CardHeader 
-                  className="cursor-pointer hover:bg-gray-50 transition-colors"
+                  className="cursor-pointer hover:bg-muted/50 transition-colors"
                   onClick={() => toggleFAQ(index)}
                 >
                   <CardTitle className="flex items-center justify-between text-lg">
                     <div className="flex items-center">
-                      <span className="bg-indigo-950 text-white text-xs px-2 py-1 rounded mr-3">
+                      <span className="bg-primary text-primary-foreground text-xs px-2 py-1 rounded mr-3">
                         {faq.category}
                       </span>
                       <span>{faq.question}</span>
                     </div>
                     {openIndex === index ? (
-                      <ChevronUp className="w-5 h-5 text-gray-500 flex-shrink-0" />
+                      <ChevronUp className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-gray-500 flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                     )}
                   </CardTitle>
                 </CardHeader>
                 {openIndex === index && (
                   <CardContent>
-                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                    <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
                   </CardContent>
                 )}
               </Card>
@@ -129,28 +131,31 @@ export const FAQSection = () => {
 
         {/* Contact for More Questions */}
         <div className="mt-12 text-center">
-          <Card className="max-w-2xl mx-auto bg-blue-50 border-blue-200">
+          <Card className="max-w-2xl mx-auto bg-secondary border-border">
             <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold text-blue-950 mb-3">
+              <h3 className="text-xl font-semibold text-primary mb-3">
                 Still Have Questions?
               </h3>
-              <p className="text-blue-950 mb-4">
+              <p className="text-foreground mb-4">
                 Our team is here to help! Reach out to us for any additional 
                 information about PTMUN VI 2025.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button 
+                <Button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-indigo-950 text-white px-6 py-2 rounded-lg hover:bg-blue-950 transition-colors"
                 >
                   Contact Us
-                </button>
-                <a 
-                  href="mailto:info@ptmun2025.com"
-                  className="border border-indigo-950 text-indigo-950 px-6 py-2 rounded-lg hover:bg-blue-50 transition-colors"
+                </Button>
+                <Button 
+                  asChild
+                  variant="outline"
                 >
-                  Send Email
-                </a>
+                  <a 
+                    href="mailto:info@ptmun2025.com"
+                  >
+                    Send Email
+                  </a>
+                </Button>
               </div>
             </CardContent>
           </Card>

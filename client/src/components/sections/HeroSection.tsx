@@ -38,13 +38,12 @@ export const HeroSection = () => {
         <div className="mb-6">
           <div className="inline-block bg-white/10 backdrop-blur-sm rounded-lg p-6 max-w-full">
             <p className="text-white/90 text-lg mb-2">Event Dates</p>
-            <p className="text-xl sm:text-2xl font-bold text-yellow-400">November 28-30, 2025</p>
-            <p className="text-sm text-white/70 mt-1">(Tentative - Final dates to be confirmed)</p>
+            <p className="text-xl sm:text-2xl font-bold text-yellow-400">October 31 - November 2, 2025</p>
           </div>
         </div>
 
         <div className="mb-6 overflow-x-auto">
-          <CountdownTimer targetDate="2025-11-28T09:00:00" />
+          <CountdownTimer targetDate="2025-10-31T09:00:00" />
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">

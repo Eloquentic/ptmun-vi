@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -50,10 +51,10 @@ export const CommitteesSection = () => {
 
   const getLevelColor = (level: string) => {
     switch (level) {
-      case "Beginner": return "bg-green-100 text-green-800";
-      case "Intermediate": return "bg-yellow-100 text-yellow-800";
-      case "Advanced": return "bg-red-100 text-red-800";
-      default: return "bg-blue-100 text-blue-800";
+      case "Beginner": return "bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-300";
+      case "Intermediate": return "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-300";
+      case "Advanced": return "bg-red-100 text-red-800 dark:bg-red-900/50 dark:text-red-300";
+      default: return "bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300";
     }
   };
 
@@ -62,7 +63,7 @@ export const CommitteesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Our Committees</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Six diverse committees offering delegates the opportunity to engage with 
             various aspects of international relations and global governance.
           </p>
@@ -78,14 +79,14 @@ export const CommitteesSection = () => {
                   </Badge>
                 </div>
                 <CardTitle className="text-lg">{committee.abbreviation}</CardTitle>
-                <h4 className="text-sm text-gray-600 font-medium">{committee.name}</h4>
+                <h4 className="text-sm text-muted-foreground font-medium">{committee.name}</h4>
               </CardHeader>
               <CardContent>
                 <div className="mb-4">
                   <h5 className="font-semibold text-sm mb-2">Agenda:</h5>
-                  <p className="text-sm text-gray-700">{committee.agenda}</p>
+                  <p className="text-sm text-foreground/80">{committee.agenda}</p>
                 </div>
-                <p className="text-sm text-gray-600">{committee.description}</p>
+                <p className="text-sm text-muted-foreground">{committee.description}</p>
               </CardContent>
             </Card>
           ))}
